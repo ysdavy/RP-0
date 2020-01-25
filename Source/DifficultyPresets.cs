@@ -52,6 +52,9 @@ namespace RP0
         [GameParameters.CustomFloatParameterUI("Maintenance cost multiplier", minValue = 0f, maxValue = 10f, stepCount = 101, displayFormat = "N1", gameMode = GameParameters.GameMode.CAREER)]
         public float MaintenanceCostMult = 1f;
 
+        [GameParameters.CustomParameterUI("Enable career progress logging")]
+        public bool CareerLogEnabled = false;
+
         public override void SetDifficultyPreset(GameParameters.Preset preset)
         {
             switch (preset)
